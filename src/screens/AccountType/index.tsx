@@ -1,7 +1,7 @@
 import * as S from './styles';
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import Header from '@components/Header'
+import Header from '@components/Header1'
 import { Card } from '@components/Card';
 import Account from '@assets/Acount.png'
 import Building from '@assets/Building.png'
