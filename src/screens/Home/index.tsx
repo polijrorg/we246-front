@@ -1,14 +1,23 @@
 import * as S from './styles';
-import Heading from '@components/Heading';
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 
-const Home = () => (
+const Home = ({ navigation }) => (
   <S.Wrapper>
-    <StatusBar style="light" />
-    <Heading color="#fca925">Poli Junior</Heading>
-    <S.StyledText>Template para iniciar projetos da PJ</S.StyledText>
-    <S.StyledText>Criado por Cauan Kazama</S.StyledText>
+    <S.MainDiv>
+      <S.IconDiv>
+        <S.Icon source={require('public/icons/logo_inicio.png')} />
+      </S.IconDiv>
+      <S.YellowTitleDiv>sua casa arrumada em</S.YellowTitleDiv>
+      <S.WhiteTitleDiv>um clique!</S.WhiteTitleDiv>
+    </S.MainDiv>
+    <S.ButtonContainer>
+      <S.YellowButton>
+        <S.ButtonTextWhite>INICIAR</S.ButtonTextWhite>
+      </S.YellowButton>
+      <S.WhiteButton>
+        <S.ButtonTextYellow>CADASTRE-SE AQUI!</S.ButtonTextYellow>
+      </S.WhiteButton>
+    </S.ButtonContainer>
   </S.Wrapper>
 );
 

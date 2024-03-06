@@ -1,31 +1,41 @@
-import { AxiosResponse } from 'axios';
-import AsyncStorage from '@react-native-async-storage/async-storage';
-
-import User from '@interfaces/User';
-
-
 import api from './api';
+import { AxiosResponse } from 'axios';
 
 interface ILoginRequest {
-    email: string;
-    password: string;
+  cpf_cnpj: string;
+  password: string;
 }
 
-interface ILoginResponse {
-    token: string;
-    user: User;
+interface IUserResponse {
+  user: {
+    id: string;
+    name: string;
+    cpf_cnpj: string;
+    phone: string;
+    password: string;
+    address: string;
+    account_type: string;
+    created_at: string;
+    updated_at: string;
+  };
+  token: string;
 }
 
 export default class UserService {
-    static async login(data: ILoginRequest): Promise<ILoginResponse> {
-        const response: AxiosResponse<ILoginResponse> = await api.post(
-            '/session/login',
-            data
-        );
-
-        await AsyncStorage.setItem('@app:token', response.data.token);
-        await AsyncStorage.setItem('@app:useId', response.data.user.id);
-
+  static async login(data: ILoginRequest): Promise<IUserResponse | string> {
+    try {
+      const response: AxiosResponse<IUserResponse> = await api.post(
+        '/sessions/login',
+        data
+      );
+      if (response.status >= 200 && response.status < 300) {
         return response.data;
+      } else {
+        throw new Error('Incorrect email/password combination');
+      }
+    } catch (error) {
+      console.error('Erro ao efetuar login:', error);
+      return 'Erro ao efetuar login';
     }
+  }
 }
