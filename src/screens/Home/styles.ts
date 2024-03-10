@@ -23,7 +23,7 @@ export const IconDiv = styled.View`
 `;
 
 export const YellowTitleDiv = styled.Text`
-  // font-family: 'Bw Modelica';
+  font-family: BwModelica;
   font-size: 29px;
   text-align: center;
   color: #fbba00;
@@ -70,14 +70,14 @@ export const WhiteButton = styled.TouchableOpacity`
 `;
 
 export const ButtonTextWhite = styled.Text`
-  // font-family: 'Bw Modelica';
+  font-family: BwModelica;
   font-size: 20px;
   text-align: center;
   color: #ffff;
 `;
 
 export const ButtonTextYellow = styled.Text`
-  // font-family: 'Bw Modelica';
+  font-family: BwModelica;
   font-size: 20px;
   text-align: center;
   color: #fbba00;
