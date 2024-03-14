@@ -36,3 +36,15 @@ export const Text = styled.Text`
   line-height: 18px;
   text-align: left;
 `;
+
+export const AgendarCard = styled.Text`
+  background-color: #ffff;
+  border-radius: 15px;
+  width: 80px;
+  height: 25px;
+  display: flex;
+  padding-top: 2px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 700;
+`;

@@ -8,30 +8,26 @@ import ServiceCardSmall from '@components/ServiceCardSmall';
 import ServicePrice from '@components/ServicePrice';
 import UserButton from '@components/UserButton';
 
-const Inicial_Usuario = () => (
+const Pesquisa = () => (
   <S.Wrapper>
     <S.WrapperCenter>
       <Header showArrow={false} showLogo={true} title="" />
-      <Busca icone="lupa" />
+      <Busca icone="agendar" />
       <S.ServiceDiv>
         <ServiceCard texto="Eletricista" imagem="eletricista" />
+        <ServiceCard texto="Eletricista" imagem="eletricista" />
+      </S.ServiceDiv>
+      <S.ServiceDiv>
+        <ServiceCard texto="Encanador" imagem="encanador" />
         <ServiceCard texto="Encanador" imagem="encanador" />
       </S.ServiceDiv>
       <S.ServiceDiv>
-        <ServiceCardSmall texto="Faxina" imagem="faxina" />
-        <ServiceCardSmall texto="" imagem="" />
-        <ServiceCardSmall texto="" imagem="" />
-        <ServiceCardSmall texto="ver mais" imagem="mais" />
+        <ServiceCard texto="Faxina" imagem="faxina" />
+        <ServiceCard texto="Faxina" imagem="faxina" />
       </S.ServiceDiv>
     </S.WrapperCenter>
-    <S.ServiceImagesDiv>
-      <S.ServiceImage source={require('public/icons/faxina_comum.png')} />
-    </S.ServiceImagesDiv>
-    <S.Texto>Serviços mais pedidos</S.Texto>
-    <ServicePrice texto="Faxina" preco="R$:100,00 - R$:150,00" />
-    <ServicePrice texto="Faxina" preco="R$:100,00 - R$:150,00" />
-    <Footer_user icon="menu" />
+    <Footer_user icon="buscar" />
   </S.Wrapper>
 );
 
-export default Inicial_Usuario;
+export default Pesquisa;

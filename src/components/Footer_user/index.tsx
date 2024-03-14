@@ -19,12 +19,12 @@ const Footer_user = ({ icon }) => (
     <S.FooterDiv>
       <S.Icon
         source={
-          icon === 'servicos'
+          icon === 'buscar'
             ? require('public/icons/buscar_colorido.png')
             : require('public/icons/search.png')
         }
       />
-      <S.Text style={{ color: icon === 'servicos' ? '#e3266c' : 'black' }}>
+      <S.Text style={{ color: icon === 'buscar' ? '#e3266c' : 'black' }}>
         Buscar
       </S.Text>
     </S.FooterDiv>
