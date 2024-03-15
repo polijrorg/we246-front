@@ -25,8 +25,8 @@ export const FooterDiv = styled.View`
 `;
 
 export const Icon = styled.Image`
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
 `;
 
 export const Text = styled.Text`
