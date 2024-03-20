@@ -14,11 +14,9 @@ justify-content: center;
 width: 100%;
 height: 63px;
 background-color: ${({ theme }) => theme.colors.surface};
-
 `;
 
-export const LeftLogo = styled.Image`
-`;
+export const LeftLogo = styled.Image``;
 
 export const LeftLogoContainer = styled(TouchableOpacity)`
     position: absolute;

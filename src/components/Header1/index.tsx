@@ -2,22 +2,24 @@ import * as S from './styles';
 import React from 'react';
 
 type Props = {
-  showTitle?: boolean;
+  showBackButton?: boolean;
   title: string;
   image: number;
 }
 
-export function Header({ title, image, showTitle = false} : Props){
+export function Header({ title, image, showBackButton = false} : Props){
   return(
     <S.SafeContainer>
     <S.Container>
-      <S.LeftLogoContainer>
-        <S.LeftLogo source={image} />
-      </S.LeftLogoContainer>
       {
-        showTitle &&
-        <S.Title>{title}</S.Title>
+       showBackButton &&
+        <S.LeftLogoContainer>
+          <S.LeftLogo source={image} />
+        </S.LeftLogoContainer>
       }
+      
+      <S.Title>{title}</S.Title>
+      
     </S.Container>
     </S.SafeContainer>
   );
