@@ -1,5 +1,22 @@
 import AppProvider from '@hooks/index';
 import { NavigationContainer } from '@react-navigation/native';
+import AppRoutes from '@routes/AppStack/app.routes';
+import Routes from '@routes/index';
+import Home from '@screens/Home';
+import React from 'react';
+
+export default function App() {
+  return (
+    <NavigationContainer>
+      <AppProvider>
+        <AppRoutes />
+      </AppProvider>
+    </NavigationContainer>
+  );
+}
+
+/* import AppProvider from '@hooks/index';
+import { NavigationContainer } from '@react-navigation/native';
 import Routes from '@routes/index';
 // import Login from '@screens/Login';
 // import Home from '@screens/Home';
@@ -17,4 +34,4 @@ export default function App() {
       </AppProvider>
     </NavigationContainer>
   );
-}
+} */

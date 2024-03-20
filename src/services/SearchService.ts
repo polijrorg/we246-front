@@ -1,4 +1,4 @@
-import api from './api';
+/*import api from './api';
 import { AxiosResponse } from 'axios';
 
 interface IServiceResponse {
@@ -28,3 +28,4 @@ export default class SearchService {
     }
   }
 }
+*/

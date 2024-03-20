@@ -7,15 +7,15 @@ import ServiceCard from '@components/ServiceCard';
 import ServiceCardSmall from '@components/ServiceCardSmall';
 import ServicePrice from '@components/ServicePrice';
 import UserButton from '@components/UserButton';
-import SearchService from '@services/SearchService';
+//import SearchService from '@services/SearchService';
 
 const Pesquisa = () => {
-  async function fetchData() {
+  /*async function fetchData() {
     const serviceData = await SearchService.getServiceData();
     console.log(serviceData);
   }
 
-  fetchData();
+  fetchData(); */
 
   return (
     <S.Wrapper>
