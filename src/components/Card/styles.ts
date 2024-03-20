@@ -32,4 +32,7 @@ export const Imagem = styled.Image``;
 
 export const AnotherImagem = styled.Image``;
 
-export const AnotherImageContainer = styled(View)``;
+export const AnotherImageContainer = styled(View)`
+    position: absolute;
+    left: 175px;
+`;

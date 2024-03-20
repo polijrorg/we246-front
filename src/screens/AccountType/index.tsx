@@ -3,17 +3,17 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import Header from '@components/Header1'
 import { Card } from '@components/Card';
-import Account from '@assets/Acount.png'
-import Building from '@assets/Building.png'
-import Guy from "@assets/Guy.png"
-import ContaPessoal from '@assets/ContaPessoal.png'
-import ContaEmpresarial from '@assets/ContaEmpresarial.png'
-import PrestadordeServico from '@assets/PrestadordeServico.png'
-import BackArrow from '@assets/BackArrow.png'
+import Account from '@assets/Acount.png';
+import Building from '@assets/Building.png';
+import Guy from "@assets/Guy.png";
+import ContaPessoal from '@assets/ContaPessoal.png';
+import ContaEmpresarial from '@assets/ContaEmpresarial.png';
+import PrestadordeServico from '@assets/PrestadordeServico.png';
+import BackArrow from '@assets/BackArrow.png';
 
 const AccountType = () => (
   <>
-  <Header title={'Tipo de Conta'} showTitle image={BackArrow}/>
+  <Header title={'Tipo de Conta'} showBackButton image={BackArrow}/>
   
   <S.Wrapper>
     <StatusBar style="dark" />
