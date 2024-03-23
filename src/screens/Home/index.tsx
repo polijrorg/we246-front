@@ -1,11 +1,8 @@
 import { useNavigation } from '@react-navigation/native';
 import * as S from './styles';
 import React from 'react';
-import { AppScreensNav } from '@routes/AppStack/app.routes';
 
-const Home = () => {
-  const { navigate } = useNavigation<AppScreensNav>();
-
+const Home = ({ navigation }) => {
   return (
     <S.Wrapper>
       <S.MainDiv>
@@ -16,7 +13,7 @@ const Home = () => {
         <S.WhiteTitleDiv>um clique!</S.WhiteTitleDiv>
       </S.MainDiv>
       <S.ButtonContainer>
-        <S.YellowButton onPress={() => navigate('Login')}>
+        <S.YellowButton onPress={() => navigation.navigate('Login')}>
           <S.ButtonTextWhite>INICIAR</S.ButtonTextWhite>
         </S.YellowButton>
         <S.WhiteButton>

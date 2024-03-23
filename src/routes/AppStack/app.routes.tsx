@@ -1,4 +1,4 @@
-import {
+/*import {
   createNativeStackNavigator,
   NativeStackNavigationProp,
 } from '@react-navigation/native-stack';
@@ -32,6 +32,29 @@ const AppRoutes: React.FC = () => (
         component={Inicial_Trabalahdor}
       />
     </AppStack.Group>
+  </AppStack.Navigator>
+);
+
+export default AppRoutes; */
+import React from 'react';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import Home from '@screens/Home';
+import Login from '@screens/Login';
+
+const AppStack = createNativeStackNavigator();
+
+const AppRoutes: React.FC = () => (
+  <AppStack.Navigator>
+    <AppStack.Screen
+      name="Home"
+      component={Home}
+      options={{ header: () => <></> }}
+    />
+    <AppStack.Screen
+      name="Login"
+      component={Login}
+      options={{ header: () => <></> }}
+    />
   </AppStack.Navigator>
 );
 
