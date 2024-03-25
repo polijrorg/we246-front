@@ -4,6 +4,7 @@ import Home from '@screens/Home';
 import Login from '@screens/Login';
 import Inicial_Trabalahdor from '@screens/Inicial_Trabalhador';
 
+
 const AppStack = createNativeStackNavigator();
 
 const AppRoutes: React.FC = () => (

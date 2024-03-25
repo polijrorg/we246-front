@@ -19,6 +19,7 @@ export const TextInput = styled.TextInput`
   font-size: 16px;
   padding: 8px;
   text-align: left;
+  font-weight: 700;
 `;
 
 export const Icon = styled.Image`
