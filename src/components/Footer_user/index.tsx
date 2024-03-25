@@ -4,34 +4,54 @@ import { TextProps } from 'react-native';
 
 const Footer_user = ({ icon }) => (
   <S.MainDiv>
-    <S.Icon
-      source={
-        icon === 'menu'
-          ? require('public/icons/inicio_colorido.png')
-          : require('public/icons/inicio.png')
-      }
-    />
-    <S.Icon
-      source={
-        icon === 'buscar'
-          ? require('public/icons/buscar_colorido.png')
-          : require('public/icons/buscar.png')
-      }
-    />
-    <S.Icon
-      source={
-        icon === 'pedidos'
-          ? require('public/icons/pedidos_colorido.png')
-          : require('public/icons/pedidos.png')
-      }
-    />
-    <S.Icon
-      source={
-        icon === 'perfil'
-          ? require('public/icons/perfil_colorido.png')
-          : require('public/icons/perfil.png')
-      }
-    />
+    <S.FooterDiv>
+      <S.Icon
+        source={
+          icon === 'menu'
+            ? require('public/icons/inicio_colorido.png')
+            : require('public/icons/inicio.png')
+        }
+      />
+      <S.Text style={{ color: icon === 'menu' ? '#e3266c' : 'black' }}>
+        Inicio
+      </S.Text>
+    </S.FooterDiv>
+    <S.FooterDiv>
+      <S.Icon
+        source={
+          icon === 'servicos'
+            ? require('public/icons/buscar_colorido.png')
+            : require('public/icons/search.png')
+        }
+      />
+      <S.Text style={{ color: icon === 'servicos' ? '#e3266c' : 'black' }}>
+        Buscar
+      </S.Text>
+    </S.FooterDiv>
+    <S.FooterDiv>
+      <S.Icon
+        source={
+          icon === 'ganhos'
+            ? require('public/icons/pedidos_colorido.png')
+            : require('public/icons/pedidos.png')
+        }
+      />
+      <S.Text style={{ color: icon === 'ganhos' ? '#e3266c' : 'black' }}>
+        Pedidos
+      </S.Text>
+    </S.FooterDiv>
+    <S.FooterDiv>
+      <S.Icon
+        source={
+          icon === 'perfil'
+            ? require('public/icons/perfil_colorido.png')
+            : require('public/icons/perfil.png')
+        }
+      />
+      <S.Text style={{ color: icon === 'perfil' ? '#e3266c' : 'black' }}>
+        Perfil
+      </S.Text>
+    </S.FooterDiv>
   </S.MainDiv>
 );
 
