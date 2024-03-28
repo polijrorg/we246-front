@@ -12,7 +12,7 @@ const Inicial_Usuario = () => (
   <S.Wrapper>
     <S.WrapperCenter>
       <Header showArrow={false} showLogo={true} title="" />
-      <Busca />
+      <Busca icone="lupa" />
       <S.ServiceDiv>
         <ServiceCard texto="Eletricista" imagem="eletricista" />
         <ServiceCard texto="Encanador" imagem="encanador" />

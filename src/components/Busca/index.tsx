@@ -2,14 +2,17 @@ import React from 'react';
 import * as S from './styles';
 import { MainDiv, Text, StyledImage, StyledTextInput } from './styles';
 
-const Busca = () => {
+const Busca = ({ icone }) => {
   return (
     <S.MainDiv>
       <S.StyledTextInput
-        placeholder="De qual serviço você precisa?"
+        placeholder="De qual serviço precisa?"
         placeholderTextColor="black"
       />
-      <S.StyledImage source={require('public/icons/pesquisa.png')} />
+      {icone === 'lupa' && (
+        <S.StyledImage source={require('public/icons/pesquisa.png')} />
+      )}
+      {icone === 'agendar' && <S.AgendarCard>Agendar</S.AgendarCard>}
     </S.MainDiv>
   );
 };

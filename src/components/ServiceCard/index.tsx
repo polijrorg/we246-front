@@ -9,6 +9,8 @@ const ServiceCard = ({ texto, imagem }) => {
         return require('public/icons/eletricista.png');
       case 'encanador':
         return require('public/icons/encanador.png');
+      case 'faxina':
+        return require('public/icons/faxina.png');
       default:
         return null;
     }
