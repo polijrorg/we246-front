@@ -16,12 +16,12 @@ export const MainDiv = styled.View`
   background-color: #ffff;
 `;
 
-export const FooterDiv = styled.View`
+export const FooterDiv = styled.TouchableOpacity`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 4px;
   align-items: center;
+  gap: 4px;
 `;
 
 export const Icon = styled.Image`

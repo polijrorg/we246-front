@@ -5,7 +5,7 @@ import Input from '@components/Input';
 import Button from '@components/Button';
 import Header from '@components/Header';
 
-const Login = () => {
+const Login = ({ navigation }) => {
   const [cpf_cnpj, setCpfCnpj] = useState('');
   const [password, setPassword] = useState('');
 
@@ -16,8 +16,13 @@ const Login = () => {
         console.error(loginResponse);
       } else {
         console.log('Login bem-sucedido');
-        console.log('Usuário:', loginResponse.user);
+        console.log('Usuário:', loginResponse.user.account_type);
         console.log('Token:', loginResponse.token);
+        if (loginResponse.user.account_type === 'personal') {
+          navigation.navigate('InicialUsuario');
+        } else if (loginResponse.user.account_type === 'company') {
+          navigation.navigate('IniciaTrabalhador');
+        }
       }
     } catch (error) {
       console.error('Erro ao efetuar login:', error);
