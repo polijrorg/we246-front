@@ -32,15 +32,15 @@ const Footer_user = ({ icon }) => {
           Buscar
         </S.Text>
       </S.FooterDiv>
-      <S.FooterDiv>
+      <S.FooterDiv onPress={() => navigation.navigate('PedidosUser')}>
         <S.Icon
           source={
-            icon === 'ganhos'
+            icon === 'pedidos'
               ? require('public/icons/pedidos_colorido.png')
               : require('public/icons/pedidos.png')
           }
         />
-        <S.Text style={{ color: icon === 'ganhos' ? '#e3266c' : 'black' }}>
+        <S.Text style={{ color: icon === 'pedidos' ? '#e3266c' : 'black' }}>
           Pedidos
         </S.Text>
       </S.FooterDiv>

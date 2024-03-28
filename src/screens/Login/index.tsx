@@ -49,7 +49,9 @@ const Login = ({ navigation }) => {
           value={password}
           onChangeText={setPassword}
         />
-        <S.RightText>ESQUECI MINHA SENHA</S.RightText>
+        <S.RightText onPress={() => navigation.navigate('ChangePassword1')}>
+          ESQUECI MINHA SENHA
+        </S.RightText>
         <Button onPressFunc={handleLogin} title="CONFIRMAR" />
         <S.TextRow>
           <S.BlackText>Não possui conta?</S.BlackText>

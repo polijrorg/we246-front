@@ -7,39 +7,36 @@ import Letter from '@assets/Letter.png';
 import Pin from '@components/Pin';
 import GradientButton from '@components/GradientButton';
 
-const ChangePassword2 = () => (
-    <>
+const ChangePassword2 = ({ navigation }) => (
+  <>
     <Header title={'Alterar Senha'} showBackButton image={BackArrow} />
 
     <S.Wrapper>
-        <StatusBar style='dark' />
+      <StatusBar style="dark" />
 
-        <S.LetterContainer>
-            <S.LetterImage source={Letter}/>
-        </S.LetterContainer>
+      <S.LetterContainer>
+        <S.LetterImage source={Letter} />
+      </S.LetterContainer>
 
-        <S.SubTitleContainer>
-            <S.SubTitleContainer1>
-                <S.SubTitleTextLine1>Insira abaixo os  </S.SubTitleTextLine1>
-                <S.SubTitleStyledText1>quatro dígitos</S.SubTitleStyledText1>
-            </S.SubTitleContainer1>
+      <S.SubTitleContainer>
+        <S.SubTitleContainer1>
+          <S.SubTitleTextLine1>Insira abaixo os </S.SubTitleTextLine1>
+          <S.SubTitleStyledText1>quatro dígitos</S.SubTitleStyledText1>
+        </S.SubTitleContainer1>
 
-            <S.SubTitleContainer2>
-                <S.SubTitleTextLine2>enviados em seu </S.SubTitleTextLine2>
-                <S.SubTitleStyledText2>endereço de</S.SubTitleStyledText2>
-            </S.SubTitleContainer2>
+        <S.SubTitleContainer2>
+          <S.SubTitleTextLine2>enviados em seu </S.SubTitleTextLine2>
+          <S.SubTitleStyledText2>endereço de</S.SubTitleStyledText2>
+        </S.SubTitleContainer2>
 
-            <S.SubTitleStyledText3>e-mail</S.SubTitleStyledText3>
-        
-        </S.SubTitleContainer>
-            
-            <Pin />
+        <S.SubTitleStyledText3>e-mail</S.SubTitleStyledText3>
+      </S.SubTitleContainer>
 
-            <GradientButton />
+      <Pin />
 
+      <GradientButton onPressFunc={() => navigation.navigate('NewPassword')} />
     </S.Wrapper>
-    </>
-
+  </>
 );
 
 export default ChangePassword2;

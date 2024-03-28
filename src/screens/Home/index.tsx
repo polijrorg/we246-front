@@ -16,7 +16,7 @@ const Home = ({ navigation }) => {
         <S.YellowButton onPress={() => navigation.navigate('Login')}>
           <S.ButtonTextWhite>INICIAR</S.ButtonTextWhite>
         </S.YellowButton>
-        <S.WhiteButton>
+        <S.WhiteButton onPress={() => navigation.navigate('AccountType')}>
           <S.ButtonTextYellow>CADASTRE-SE AQUI!</S.ButtonTextYellow>
         </S.WhiteButton>
       </S.ButtonContainer>

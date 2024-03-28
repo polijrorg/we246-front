@@ -1,11 +1,11 @@
 import * as S from './styles';
 import React from 'react';
-import ButtonImage from '@assets/RegisterButton.png'
+import ButtonImage from '@assets/RegisterButton.png';
 
-const GradientButton = () => (
-    <S.Button>
-        <S.ButtonImage source = {ButtonImage} />
-    </S.Button>
+const GradientButton = ({ onPressFunc }) => (
+  <S.Button onPress={onPressFunc}>
+    <S.ButtonImage source={ButtonImage} />
+  </S.Button>
 );
 
 export default GradientButton;
