@@ -36,21 +36,21 @@ export const TextRow = styled.View`
 `;
 
 export const Title = styled.Text`
-  // font-family: 'Bw Modelica';
+  font-family: 'BwModelica';
   font-size: 32px;
   text-align: center;
   color: #e71f69;
 `;
 
 export const BlackText = styled.Text`
-  // font-family: 'Bw Modelica';
+  font-family: BwModelica;
   font-size: 16px;
   text-align: center;
   color: #000000;
 `;
 
 export const PinkText = styled.Text`
-  // font-family: 'Bw Modelica';
+  font-family: BwModelica;
   font-size: 16px;
   text-align: center;
   color: #e71f69;
