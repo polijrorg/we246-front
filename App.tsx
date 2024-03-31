@@ -14,7 +14,13 @@ export default function App() {
   return (
     <NavigationContainer>
       <AppProvider>
-        <Login />
+        {/* <Login /> */}
+        <RegisterPerson />
+        {/* <RegisterCompany /> */}
+        {/* <AccountType /> */}
+        {/* <ChangePassword1/> */}
+        {/* <ChangePassword2 /> */}
+        {/* <NewPassword />  */}
       </AppProvider>
     </NavigationContainer>
   );

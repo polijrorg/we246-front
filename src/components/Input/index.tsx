@@ -3,8 +3,7 @@ import { Image, TouchableOpacity } from 'react-native';
 import * as S from './styles';
 
 const Input = ({ text, showIcon, value, onChangeText }) => {
-  const [showPassword, setShowPassword] = useState(false);
-
+  const [showPassword, setShowPassword] = useState(showIcon? false : true);
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword);
   };
