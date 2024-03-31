@@ -7,7 +7,6 @@ import Inicial_Usuario from '@screens/Inicial_Usuario';
 import Pesquisa from '@screens/Pesquisa';
 import Pedidos from '@screens/Pedidos';
 
-
 const AppStack = createNativeStackNavigator();
 
 const AppRoutes: React.FC = () => (
