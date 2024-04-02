@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components/native';
 import { Image } from 'react-native';
 
 export const MainDiv = styled.View`
-  width: 170px;
+  width: 42%;
   height: 80px;
   display: flex;
   flex-direction: row;

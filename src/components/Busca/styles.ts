@@ -38,13 +38,15 @@ export const Text = styled.Text`
 `;
 
 export const AgendarCard = styled.Text`
-  background-color: #ffff;
-  border-radius: 15px;
-  width: 80px;
-  height: 25px;
-  display: flex;
   padding-top: 2px;
   text-align: center;
   font-size: 15px;
   font-weight: 700;
+`;
+
+export const AgendarButton = styled.TouchableOpacity`
+  background-color: #ffff;
+  border-radius: 15px;
+  width: 80px;
+  height: 25px;
 `;

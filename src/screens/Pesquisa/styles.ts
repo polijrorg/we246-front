@@ -52,8 +52,9 @@ export const ServiceDiv = styled.View`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  width: 86%;
+  flex-wrap: wrap;
   gap: 16px;
-  margin-top: 16px;
 `;
 
 export const SubText = styled.Text`
