@@ -5,8 +5,10 @@ import { TextProps } from 'react-native';
 const Header = ({ title, showArrow, showLogo }) => (
   <S.MainDiv>
     {showArrow && <S.Icon source={require('public/icons/arrow.png')} />}
-    {showLogo && <S.LogoIcon source={require('public/icons/logo.png')} />}
-    {!showLogo && <S.Title>{title}</S.Title>}
+    <S.SubMainDiv>
+      {showLogo && <S.LogoIcon source={require('public/icons/logo.png')} />}
+      {!showLogo && <S.Title>{title}</S.Title>}
+    </S.SubMainDiv>
   </S.MainDiv>
 );
 
