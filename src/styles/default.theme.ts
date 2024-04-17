@@ -15,6 +15,7 @@ export const theme = {
       highEmphasis: '#000000',
       mediumEmphasis: '#545454',
       lowEmphasis: '#949494',
+      opaco: '#4412244D',
 
       surface: '#FFFFFF',
       divider: '#E6EAED',

@@ -29,3 +29,6 @@ export const Title = styled.Text`
     font-weight: 700;
 `;
 
+export const MainImageContainer = styled(View)``;
+
+export const MainImage = styled.Image``;
