@@ -13,7 +13,7 @@ import BackArrow from '@assets/BackArrow.png';
 
 const AccountType = () => (
   <>
-  <Header title={'Tipo de Conta'} showBackButton image={BackArrow}/>
+  <Header title={'Tipo de Conta'} showBackButton image={BackArrow} mainImage={0}/>
   
   <S.Wrapper>
     <StatusBar style="dark" />
