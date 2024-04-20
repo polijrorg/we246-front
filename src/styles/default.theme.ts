@@ -19,6 +19,7 @@ export const theme = {
 
       surface: '#FFFFFF',
       divider: '#E6EAED',
-      background: '#FAFAFA'
+      background: '#FAFAFA',
+      mustard: '#FBBA00',
   }
 };

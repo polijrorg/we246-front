@@ -25,21 +25,22 @@ export const ButtonContainer = styled(View)`
 `;
 
 export const YesButton = styled(TouchableOpacity)`
-    background-color: ${({ theme }) => theme.colors.secondary.main};
+    border-color: ${({ theme }) => theme.colors.mustard};
+    border-width: 1px;
     height: 32px;
     border-radius: 16px;
     justify-content: center;
     align-items: center;
+    width: 100px;
 `;
 
 export const NoButton = styled(TouchableOpacity)`
-    background-color: ${({ theme }) => theme.colors.surface};
-    border-color: ${({ theme}) => theme.colors.secondary.main};
+    background-color: ${({ theme }) => theme.colors.mustard};
     height: 32px;
-    border: 2px;
     border-radius: 16px;
     justify-content: center;
     align-items: center;
+    width: 100px;
 `;
 
 export const ButtonText = styled(Text)`
