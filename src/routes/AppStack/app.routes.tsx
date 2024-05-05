@@ -6,6 +6,8 @@ import Inicial_Trabalhador from '@screens/Inicial_Trabalhador';
 import Inicial_Usuario from '@screens/Inicial_Usuario';
 import Pesquisa from '@screens/Pesquisa';
 import Pedidos from '@screens/Pedidos';
+import TwoOptionsModal from '@components/TwoOptionsModal';
+import RegisterPerson from '@screens/RegisterPerson';
 
 const AppStack = createNativeStackNavigator();
 

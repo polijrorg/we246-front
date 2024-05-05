@@ -6,6 +6,7 @@ import Footer_user from '@components/Footer_user';
 import { StatusBar } from 'expo-status-bar';
 import {SettingsCards} from '@components/SettingsCards';
 import { FirstSettingsCards } from '@components/FirstSettingsCard';
+import TwoOptionsModal from '@components/TwoOptionsModal';
 
 const Settings = () => (
     <>
@@ -16,8 +17,12 @@ const Settings = () => (
             
             <FirstSettingsCards title='Gerenciar Notificações' />
             <SettingsCards title='Termos e Condições de Uso' />
-
-            <S.Click>
+            
+            
+            <TwoOptionsModal />
+            
+            
+            <S.Click >
             <S.StyledText>Sair</S.StyledText>
             </S.Click>
 
