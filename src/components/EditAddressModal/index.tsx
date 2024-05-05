@@ -1,9 +1,9 @@
 import * as S from './styles';
 import React from 'react';
 
-const TwoOptionsModal = () => (
+const EditAddressModal = () => (
     <S.BackgroundContainer>
-        <S.StyledText>Tem certeza que você quer sair?</S.StyledText>
+        <S.StyledText>Tem certeza que você quer excluir esse endereço?</S.StyledText>
         
         <S.ButtonContainer>
             
@@ -20,4 +20,4 @@ const TwoOptionsModal = () => (
     </S.BackgroundContainer>
 );
 
-export default TwoOptionsModal;
+export default EditAddressModal;

@@ -6,7 +6,7 @@ export const BackgroundContainer = styled(View)`
     justify-content: center;
     align-items: center;
     width: 289px;
-    height: 96px;
+    height: 120px;
     background-color: ${({ theme }) => theme.colors.surface};
     padding: 16px;
     border-radius: 16px;

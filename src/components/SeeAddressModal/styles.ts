@@ -5,8 +5,8 @@ export const BackgroundContainer = styled(View)`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 289px;
-    height: 96px;
+    width: 172px;
+    height: 140px;
     background-color: ${({ theme }) => theme.colors.surface};
     padding: 16px;
     border-radius: 16px;
@@ -20,8 +20,7 @@ export const StyledText = styled(Text)`
 
 export const ButtonContainer = styled(View)`
     display: flex;
-    flex-direction: row;
-    gap: 12px;
+    gap: 10px;
 `;
 
 export const YesButton = styled(TouchableOpacity)`
@@ -31,7 +30,7 @@ export const YesButton = styled(TouchableOpacity)`
     border-radius: 16px;
     justify-content: center;
     align-items: center;
-    width: 100px;
+    width: 140px;
 `;
 
 export const NoButton = styled(TouchableOpacity)`
@@ -40,7 +39,7 @@ export const NoButton = styled(TouchableOpacity)`
     border-radius: 16px;
     justify-content: center;
     align-items: center;
-    width: 100px;
+    width: 140px;
 `;
 
 export const ButtonText = styled(Text)`
