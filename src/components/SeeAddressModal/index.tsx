@@ -1,18 +1,18 @@
 import * as S from './styles';
 import React from 'react';
 
-const TwoOptionsModal = () => (
+const SeeAddressModal = () => (
     <S.BackgroundContainer>
-        <S.StyledText>Tem certeza que você quer sair?</S.StyledText>
+        <S.StyledText>Ver endereço?</S.StyledText>
         
         <S.ButtonContainer>
             
             <S.NoButton>
-                <S.ButtonText>NÃO</S.ButtonText>
+                <S.ButtonText>Selecionar</S.ButtonText>
             </S.NoButton>
 
             <S.YesButton>
-                <S.ButtonText>SIM</S.ButtonText>
+                <S.ButtonText>Editar</S.ButtonText>
             </S.YesButton>
 
         </S.ButtonContainer>
@@ -20,4 +20,4 @@ const TwoOptionsModal = () => (
     </S.BackgroundContainer>
 );
 
-export default TwoOptionsModal;
+export default SeeAddressModal;
