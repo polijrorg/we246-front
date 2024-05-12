@@ -6,7 +6,6 @@ import { StatusBar } from 'expo-status-bar';
 import Input from '@components/Input';
 import GradientButton from '@components/GradientButton';
 import Footer_user from '@components/Footer_user';
-import TwoOptionsModal from '@components/TwoOptionsModal';
 import SeeAddressModal from '@components/SeeAddressModal';
 import EditAddressModal from '@components/EditAddressModal';
 
@@ -17,23 +16,30 @@ const EditAddress = () => (
         <S.Wrapper>
             <StatusBar style='dark' />
 
-            <S.TitleContainer>
-                <S.Title>Confira e Edite as Informações</S.Title>
-            </S.TitleContainer>
+            <S.TextContainer>
 
-            <Input text='CEP' showIcon={undefined} value={undefined} onChangeText={undefined} />
-            
-            <Input text='Estado' showIcon={undefined} value={undefined} onChangeText={undefined} />
-            
-            <Input text='Cidade' showIcon={undefined} value={undefined} onChangeText={undefined} />
-            
-            <Input text='Logradouro' showIcon={undefined} value={undefined} onChangeText={undefined} />
-            
-            <Input text='Número' showIcon={undefined} value={undefined} onChangeText={undefined} />
-            
-            <Input text='Complemento' showIcon={undefined} value={undefined} onChangeText={undefined} />
+                <S.TitleContainer>
+                    <S.Title>Confira e Edite as Informações</S.Title>
+                </S.TitleContainer>
 
-            <GradientButton />
+                <Input text='CEP' showIcon={undefined} value={undefined} onChangeText=  {undefined} />
+            
+                <Input text='Estado' showIcon={undefined} value={undefined}     onChangeText={undefined} />
+            
+                <Input text='Cidade' showIcon={undefined} value={undefined}     onChangeText={undefined} />
+            
+                <Input text='Logradouro' showIcon={undefined} value={undefined}     onChangeText={undefined} />
+            
+                <Input text='Número' showIcon={undefined} value={undefined}     onChangeText={undefined} />
+            
+                <Input text='Complemento' showIcon={undefined} value={undefined}    onChangeText={undefined} />
+
+                <GradientButton />
+
+                {/* <SeeAddressModal /> */}
+                {/* <EditAddressModal /> */}
+
+            </S.TextContainer>
 
             <S.StyledContainer >
                 <S.StyledText>Excluir Endereço</S.StyledText>

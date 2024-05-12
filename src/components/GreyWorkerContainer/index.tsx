@@ -28,7 +28,7 @@ export function GreyWorkerContainer({ nota, title, price, name, image}: Props){
             <S.RightContainer>
                 <S.RightText>{title}</S.RightText>
                 <S.RightText>{price}</S.RightText>
-                <S.StyledText>Indisponível no momento</S.StyledText>
+                {/* <S.StyledText>Indisponível no momento</S.StyledText> */}
                 <S.ButtonContainer>
                     <GreyHireButton />
                 </S.ButtonContainer>

@@ -5,6 +5,7 @@ export const Wrapper = styled(View)`
     flex: 1;
     align-items: center;
     background-color: ${({ theme }) => theme.colors.background};
+    /* background-color: chocolate; */
     justify-content: space-between;
 `;
 
@@ -16,7 +17,7 @@ export const TitleContainer = styled(View)`
 `;
 
 export const TextContainer = styled(View)`
-    align-items: center;
+    /* background-color: chartreuse; */
     gap: 24px;
 `;
 
