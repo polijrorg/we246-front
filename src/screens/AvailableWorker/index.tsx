@@ -15,10 +15,13 @@ const AvailableWorker = () => (
         <Header title='' showBackButton image={BackArrow} showMainImage mainImage={logo} />        
         
         
-        
         <S.Wrapper>
             <Busca icone='lupa' />
             
+            <S.HighlightContainer>
+                <S.HighlightedText>RECOMENDADO!</S.HighlightedText>
+            </S.HighlightContainer>
+
             <S.StyledScrollView>
                 <WorkerContainer nota={'4.9'} title={'aaaaaaaaaaa'} price={'bbbbbbbbbbbbb'} name={'Leonardo'} image={WorkerImage}/>
 

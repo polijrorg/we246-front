@@ -8,6 +8,7 @@ import Pesquisa from '@screens/Pesquisa';
 import Pedidos from '@screens/Pedidos';
 import TwoOptionsModal from '@components/TwoOptionsModal';
 import RegisterPerson from '@screens/RegisterPerson';
+import EditAddress from '@screens/EditAddress';
 
 const AppStack = createNativeStackNavigator();
 
@@ -41,6 +42,11 @@ const AppRoutes: React.FC = () => (
     <AppStack.Screen
       name="Pedidos"
       component={Pedidos}
+      options={{ header: () => <></> }}
+    />
+    <AppStack.Screen
+      name="EditAddress"
+      component={EditAddress}
       options={{ header: () => <></> }}
     />
   </AppStack.Navigator>
