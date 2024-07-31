@@ -63,7 +63,7 @@ export default class UserService {
   static async create(data: ICreateRequest): Promise<ICreateResponse | string> {
     try {
       const response: AxiosResponse<ICreateResponse> = await api.post(
-        '/users/register',
+        '/pendingProvider/register',
         data
       );
       if (response.status >= 200 && response.status < 300) {
